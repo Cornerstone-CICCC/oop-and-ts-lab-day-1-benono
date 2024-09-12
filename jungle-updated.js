@@ -53,7 +53,7 @@ class Animal {
     this.#energy -= this.#attackCost;
     target.energy -= this.#attackCost;
 
-    console.log(`${this.#name} ${this.#wayOfAttack} to attack ${target.name}`);
+    console.log(`${this.#name} ${this.#wayOfAttack} to attack ${target.name}!`);
 
     const targetDefeated = target.energy <= 0;
     const myselfDefeated = this.#energy <= 0;

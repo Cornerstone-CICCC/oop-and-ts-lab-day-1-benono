@@ -72,8 +72,6 @@ class Animal {
 
     console.log(`${this.#name}'s energy: ${this.#energy}`);
     console.log(`${target.name}'s energy: ${target.energy}`);
-
-    console.log("");
   }
 
   eat() {
@@ -105,7 +103,7 @@ class Bird extends Animal {
     this.energy -= 20;
     target.energy -= 20;
 
-    console.log(`${this.name} swoops in to attack ${target.name}`);
+    console.log(`${this.name} swoops in to attack ${target.name}!`);
 
     const targetBeated = target.energy <= 0;
     const myselfBeated = this.energy <= 0;
@@ -132,8 +130,6 @@ class Bird extends Animal {
 
     console.log(`${this.name}'s energy: ${this.energy}`);
     console.log(`${target.name}'s energy: ${target.energy}`);
-
-    console.log("");
   }
 
   eat() {
@@ -166,7 +162,7 @@ class Mammal extends Animal {
     this.energy -= 50;
     target.energy -= 50;
 
-    console.log(`${this.name} lunges to attack ${target.name}`);
+    console.log(`${this.name} lunges to attack ${target.name}!`);
 
     const targetBeated = target.energy <= 0;
     const myselfBeated = this.energy <= 0;
@@ -193,8 +189,6 @@ class Mammal extends Animal {
 
     console.log(`${this.name}'s energy: ${this.energy}`);
     console.log(`${target.name}'s energy: ${target.energy}`);
-
-    console.log("");
   }
 
   eat() {
@@ -227,7 +221,7 @@ class Reptile extends Animal {
     this.energy -= 30;
     target.energy -= 30;
 
-    console.log(`${this.name} bites to attack ${target.name}`);
+    console.log(`${this.name} bites to attack ${target.name}!`);
 
     const targetBeated = target.energy <= 0;
     const myselfBeated = this.energy <= 0;
@@ -254,8 +248,6 @@ class Reptile extends Animal {
 
     console.log(`${this.name}'s energy: ${this.energy}`);
     console.log(`${target.name}'s energy: ${target.energy}`);
-
-    console.log("");
   }
 
   eat() {
